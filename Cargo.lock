@@ -423,7 +423,9 @@ name = "hello_world"
 version = "0.1.0"
 dependencies = [
  "dotenvy",
+ "log",
  "pretty_env_logger",
+ "reqwest",
  "teloxide",
  "tokio",
 ]
