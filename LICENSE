@@ -1,0 +1,50 @@
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
+Copyright (c) 2026 sacerdos / ynubo. All rights reserved.
+
+This License Agreement ("Agreement") is a legal agreement between the Copyright 
+Holder (sacerdos / ynubo) and any user ("User") who accesses, views, or uses 
+this software and its source code ("Software").
+
+1. OWNERSHIP AND INTELLECTUAL PROPERTY
+1.1. The Software, including all source code, architecture, graphics, and 
+     documentation, is owned exclusively by the Copyright Holder.
+1.2. This Software is protected by copyright laws and international copyright 
+     treaties. No title to or ownership of the Software is transferred to the User.
+
+2. RESTRICTIONS ON USE AND DISTRIBUTION
+2.1. The User is STRICTLY PROHIBITED from copying, distributing, publishing, 
+     sublicensing, renting, or selling the Software as a whole.
+2.2. The User is STRICTLY PROHIBITED from running, deploying, or hosting public 
+     or commercial instances of this Telegram bot without the express written 
+     permission of the Copyright Holder.
+2.3. Commercial use of the Software or any derivative works is strictly forbidden.
+
+3. PERMITTED USE AND CODE SNIPPETS (FAIR USE)
+3.1. The User is permitted to view the source code for educational, review, 
+     and learning purposes.
+3.2. The User is permitted to copy small, isolated fragments or snippets of 
+     the code (e.g., individual functions or algorithms) for personal, 
+     educational, and non-commercial projects.
+3.3. Any permitted use of code snippets under Section 3.2 MUST include clear 
+     and visible attribution to the original author (sacerdos / ynubo) in the 
+     source code comments.
+
+4. DERIVATIVE WORKS
+4.1. Creating direct derivatives, forks, or modifications of the complete 
+     Software for public distribution or deployment is strictly prohibited.
+4.2. If the Copyright Holder grants written permission to modify the Software, 
+     any such modifications must remain under this exact same proprietary license.
+
+5. TERMINATION
+5.1. This license terminates automatically if the User violates any of the 
+     terms described in this Agreement. Upon termination, the User must destroy 
+     all copies of the Software in their possession.
+
+6. DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY
+6.1. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+6.2. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+     DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+     OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE 
+     USE OR OTHER DEALINGS IN THE SOFTWARE.
