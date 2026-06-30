@@ -1,46 +1,17 @@
-trait Loggable {
-    // Каждая структура, которая хочет быть Loggable, 
-    // должна написать свою версию функции format_message
-    fn format_message(&self) -> String;
-}
+use teloxide::prelude::*;
 
-struct User {
-    username: String,
-    warns: u8,
-}
+// Декларируем наши модули из соседних файлов
+mod admin;
+mod commands; 
 
-// Реализуем умение Loggable для Обычного Игрока
-impl Loggable for User {
-    fn format_message(&self) -> String {
-        format!("👤 Игрок @{} | Предупреждения: {}", self.username, self.warns)
-    }
-}
+#[tokio::main]
+async fn main() {
+    pretty_env_logger::init();
+    dotenvy::dotenv().ok(); 
+    println!("Бот запущен с разделением по модулям...");
 
-struct Admin {
-    nickname: String,
-    level: u8,
-}
+    let bot = Bot::from_env();
 
-// Реализуем умение Loggable для Админа
-impl Loggable for Admin {
-    fn format_message(&self) -> String {
-        format!("🛡️ Модератор [{}] (Уровень: {})", self.nickname, self.level)
-    }
-}
-
-
-// Эта функция говорит: "Я приму любой тип данных, который реализует типаж Loggable"
-fn send_to_telegram(item: &impl Loggable) {
-    let text = item.format_message(); // Rust точно знает, что этот метод есть!
-    println!("Отправка в API Telegram: \n{}", text);
-}
-
-fn main() {
-    let player = User { username: String::from("Magnus"), warns: 1 };
-    let mod_user = Admin { nickname: String::from("Saturn_Admin"), level: 3 };
-
-    // Кормим функции абсолютно разные структуры — и всё работает!
-    send_to_telegram(&player);
-    println!("-------------------");
-    send_to_telegram(&mod_user);
+    // Вызываем repl, но теперь указываем путь через имя модуля: commands::...
+    commands::Command::repl(bot, commands::answer).await;
 }
