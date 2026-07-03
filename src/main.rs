@@ -2,6 +2,8 @@ use teloxide::prelude::*;
 
 #[tokio::main]
 async fn main() {
+    dotenvy::dotenv().ok();
+    
     pretty_env_logger::init();
     println!("Бот-модератор запущен...");
 
